@@ -1,5 +1,5 @@
 body
-{background-image:url(moon.jpg);
+{background-image:url(cherry.jpg);
  background-position:centre;
  position: relative;
  background-size: cover;
@@ -7,7 +7,7 @@ body
  
 }
 .lag{
-    width: 50px; height: 10vh
+    width: 90px; height: 10vh
 }
 
 
@@ -35,7 +35,7 @@ body
 .nav a{
     color:black;
     text-transform: uppercase;
-    padding:5px 20px;
+    padding:10px 20px;
     border-radius: 0px 9px;
     text-decoration: none;
    display: flex;}
@@ -45,15 +45,11 @@ body
     display:inline-block;
     padding-left: 15px;
     position: relative;
+    margin-bottom: 50px;
 }
 .nav a.active{
     background-color:rgb(202, 192, 221);
     transition: all 0.5s ease;
-}
-
-   
-    
-
 }
 
 .material-symbols-outlined {
