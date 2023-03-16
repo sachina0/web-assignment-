@@ -1,6 +1,4 @@
-.b{
-    text-align: center;
-}
+
 /*container includes */
 .parentcard{display: flex;justify-content: space-between;}
 .box{
@@ -71,3 +69,21 @@
     opacity:1;
     visibility:visible;
 }
+.slide:hover .details{
+    height:100px;
+    bottom: 70px;
+    background:purple;
+    width:350px;
+    margin-left: -50px;
+    text-align: center;opacity: 1;padding:0px  20px;border-radius: 10px;
+    
+}
+.slide:hover p{
+    opacity:1;
+    visibility:visible;
+}
+.slide:hover img{
+    transform:scale(1.2) rotate(-1deg);transition: 0.8s;
+}
+
+
