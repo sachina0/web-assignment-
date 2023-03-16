@@ -7,7 +7,8 @@ body
  
 }
 .lag{
-    width: 90px; height: 10vh
+    width: 90px; height: 10vh;
+    margin-right: 150px;
 }
 
 
@@ -26,7 +27,7 @@ body
 .nav{
     list-style: none;
     display: flex;
-    margin:opx;
+    margin:0px;
     position: relative;
     color: navy;
     align-self: center;
@@ -43,7 +44,7 @@ body
 .nav ul li{
     list-style: none;
     display:inline-block;
-    padding-left: 15px;
+    padding-left: 55px;
     position: relative;
     margin-bottom: 50px;
 }
@@ -62,7 +63,7 @@ body
 
 @media only screen and (max-width:600px){
     body{
-        background-color:rgb(238, 240, 234);
+        background-color:rgb(249, 200, 208);
         background-image: none;
     }
 }
