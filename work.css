@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(248, 238, 245);
+    background-image: none;
+}
+.poon{
+    height: 550px;
+    width:1100px;
+    text-align: center;
+    padding: 0 200px;
+    border-radius: 0 4px;
+}
+.p{
+    width: 1000px;
+ border:3px solid=black;
+ white-space:nowrap;
+ overflow:hidden;
+
+}
