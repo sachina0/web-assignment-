@@ -15,15 +15,23 @@ body
 .me{
  color:seashell;
  text-decoration: dotted;
- font-family: fantasy;
+ font-family: f;
 }
 
 
 .nav{
     width: 505%;height: 10vh;
 }
-.nav a{padding-left:30px;background-color: rgb(112, 3, 116);padding: 30px;color: white;border-radius: 10px 0px;transition: 0.8s;}
-.nav a:hover{background-color: white;color: purple;transition: 0.8s; text-decoration-style: double;}
+.nav a{padding-left:30px;background-color: rgb(112, 3, 116);
+    padding: 30px;color: white;
+    border-radius: 10px 0px;
+    transition: 0.8s;
+    padding-top: 5px;
+}
+.nav a:hover{background-color: white; 
+    color: purple;transition: 0.8s; 
+    text-decoration-style: double;
+}
 .nav{
     list-style: none;
     display: flex;
