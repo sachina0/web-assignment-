@@ -9,10 +9,19 @@ body{
     padding: 0 200px;
     border-radius: 0 4px;
 }
-.p{
+.p
+{
     width: 1000px;
  border:3px solid=black;
  white-space:nowrap;
  overflow:hidden;
-
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.imslide{
+    background-image: url(poonhill1.jpg);
+    
 }
