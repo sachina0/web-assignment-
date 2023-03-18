@@ -30,7 +30,8 @@ body
     padding-top: 5px;
 }
 .nav a:hover{background-color: white; 
-    color: purple;transition: 0.8s; 
+    color: purple;
+    
     text-decoration-style: double;
 }
 .nav{
@@ -59,7 +60,7 @@ body
 }
 .nav a.active{
     background-color:rgb(202, 192, 221);
-    transition: all 0.5s ease;
+    
     text-decoration: underline green;
 }
 .material-symbols-outlined {

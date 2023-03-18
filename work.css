@@ -9,13 +9,8 @@ body{
     padding: 0 200px;
     border-radius: 0 4px;
 }
-.p
-{
-    width: 1000px;
- border:3px solid=black;
- white-space:nowrap;
- overflow:hidden;
-}
+
+
 *{
     margin:0;
     padding:0;
