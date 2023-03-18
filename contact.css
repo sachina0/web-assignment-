@@ -1,3 +1,10 @@
+body{
+    background-image:none;
+    background-color:  rgb(247, 225, 240);
+}
+.h2{
+    text-align:center;
+}
 form{
     width:85%;
     max-width: 605px;
@@ -42,4 +49,48 @@ input:valid~label
 {
  top:-35px;
  font-size: 15px;
+}
+.fhoot{
+    display:flex;
+    padding:20px;
+    background-color:rgb(179, 206, 206);
+    padding:10px 0;
+    height:10px;
+}
+.tain{ 
+    margin:auto;
+    max-width:1180px;
+   }
+ul{
+    list-style:none;
+}
+.fhoot-col{
+    width:30%;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+.each{
+    display: flex;
+    flex-wrap:wrap;
+}
+.fhoot-col h4{
+    font-size:17px;
+    font-weight:450px;
+    color:darkgreen;
+    text-transform:29px;
+    margin-bottom:25px;
+    position:relative;
+}
+.footer-col h4 ::before{
+    position:relative;
+    left:1;
+    bottom:-11px;
+    background-color:bisque;
+    height:3px;
+    width:55px
+    box-sizing: content-box;
+}
+.fhoot-col ul li a:hover{
+    color:antiquewhite;
+    padding-left:9px;
 }
