@@ -9,8 +9,11 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
        <!--contact css-->
      <link rel="stylesheet"href="contact.css">
+     <!--icons link-->
+     <script src="https://kit.fontawesome.com/0690c5b817.js" crossorigin="anonymous"></script>
     </head>
        <body>
+        <!--nav bar-->
         <div class="nav" >
             <img src="lag0.png" class="lag" height="1vh" width="5px">
            <ul>
@@ -21,19 +24,29 @@
            <li><a class="active" href="./contact.html">Contacts</a></li>
            </ul>
            </div>
+           <!--contact form-->
            <h4>Contact form</h4>
            <div class="cforum">
                 <form>
-                    <label for="username">username</label>
-                    <input type="text"name ="username"/>
-                    <br>
+                     <div class="group">
+                    <label for="username"><i class="fa-regular fa-user"></i> User/Nickname</label>
+                    <input type="text"name ="username" required/>
+                    </div>
+                    <div class="group">
+                        <label for="email"><i class="fa-solid fa-envelope"></i>
+                            Email address</label>
+                        <input type="email" id="email" required/>
+                        </div>
+                     <div class="group">
+                            <label for="number"><i class="fa-solid fa-phone"></i> Ph no.</label>
+                            <input type="text" id="number" required/>
+                            </div>
 
-                    <label for="password">password</label>
-                    <input type="password" name="password"/>
-                    <br>
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject"></textarea>
-                    <button type="submit" name="submit">submit</button>
+                     <div class="group">
+                        <label for="message"><i class="fa-regular fa-comment"></i> Your thoughts</label>
+                        <textarea id="message" rows="10" required></textarea>
+                     </div>
+                     <button type="submit">Submit <i class="fa-sharp fa-solid fa-paper-plane"></i></button>
                 </form>
             </div>
        </body>
