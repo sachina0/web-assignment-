@@ -1,10 +1,6 @@
 body{
     background-color: rgb(248, 238, 245);
     background-image: none;
-    display:grid;
-    width:101%;
-    height:90vh;
-    place-items: center;
 }
 .poon{
     height: 70px;
@@ -13,12 +9,23 @@ body{
     padding: 200px;
     border-radius: 0 100px;
     background-image: url(poonhill1.jpg);
-    background-size: 110% 100%;
-    animation:neimage 15s linear infinite;
+    background-size: 100% 100%;
+    animation:neimage 22s linear infinite; transition-delay: 0.8s;
+    display: grid;
+   }
+   @keyframes neimage{
+    1%{
+    background-image: url(maipoon.jpg);
+   } 
+    24%{
+    background-image: url(maipoon1.jpg);}
+    51%{
+        background-image: url(maipoon2.jpg);}
+    77%{
+        background-image: url(maipoonhill.jpg);}
     
+    
+    100%{
+        background-image: url(poonhill1.jpg);}
   
-}
-
-
-
-    
+        }
