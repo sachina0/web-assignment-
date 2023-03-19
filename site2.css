@@ -1,0 +1,74 @@
+.lag{
+    width: 90px; height: 10vh;
+    margin-right: 140px;}
+/* [ON BIG SCREEN] */
+/* (A) WRAPPER */
+.hamnav {
+    width:505%;height: 10vh;
+    list-style: none;
+    display: flex;
+    margin:0px;
+    position:sticky;
+    align-self: center;
+}
+ .hamitems{display:flex}
+ .hamitems ul a{
+    padding-right:30px;background-color: rgb(135, 187, 161);
+    flex-grow: 1;
+    flex-basis: 0;
+    text-decoration: none;
+    text-align: center;
+    padding: 30px;color: white;
+    border-radius: 10px 0px;
+    transition: 0.8s;
+    padding-top: 5px;
+    padding-bottom: 8px;
+   }
+   .hamnav ul li{
+    list-style: none;
+    display:inline-block;
+    padding-left: 55px;
+    position: relative;
+    margin-bottom: 5px;}
+    .hamnav a.active{
+        background-color:rgb(202, 192, 221);
+        
+        text-decoration: underline green;
+    }
+  
+  .hamitems a:hover { background-color: white; 
+    color: rgb(70, 6, 70);
+    
+    text-decoration-style: double; }
+  
+  /* (C) HIDE HAMBURGER */
+  .hamnav label,.hamburger { display: none; }
+  /* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    .hamitems  a {
+      box-sizing: border-box;
+      display:block;
+      width: 100%;
+ 
+      
+    }
+    .hamnav{
+        width:100%;
+       
+    }
+    /* (B) SHOW HAMBURGER ICON */
+    .hamnav label { 
+      display: inline-block; 
+      color: white;
+      background: #ad3ef7;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+  
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    .hamitems,.hamitemsul li a{ display: none; }
+    .hamnav input:checked ~ .hamitems { display: block; }
+   
+  }

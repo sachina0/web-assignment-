@@ -71,11 +71,7 @@ body
   'opsz' 48,
 }
 
-@media only screen and (max-width:600px){
-    body{
-        background-color:rgb(249, 200, 208);
-        background-image: none;
-    }
-}
+
+
 
     
