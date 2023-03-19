@@ -261,11 +261,14 @@
     animation:neimage 10s linear infinite; transition-delay: 0.8s;
     display: grid;
    }
-   .p{
+   .s{
     text-align: center;
-    font-size: 7px;
+    font-size: 40px;
     visibility: visible;
     opacity: 5;
+   }
+   h1{
+    font-size:0em
    }
    @keyframes neimage{
     1%{
@@ -419,8 +422,8 @@
 
 
 
-
-            /*site css*/
+            /*
+            /*site css*
             .mainsite{
                 text-align:left;
                }
