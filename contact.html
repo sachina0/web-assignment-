@@ -1,45 +1,59 @@
 <!DOCTYPE html> 
-   <html>
+   <html lang="en">
        <head>
            <title> contact</title>
            
-        <!--css link-->
-        <link rel="stylesheet" href="asig1.css">
-        <!--ref for icon-->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+       
        <!--contact css-->
-      <link rel="stylesheet" href="contact.css">
+      <link rel="stylesheet" href="site2.css">
+      <style>
+        input,textarea{
+        padding: 15px;
+        color:plum;
+        width:0;
+        outline: 2px;;
+        background: transparent;
+        border-radius: 0 3px;
+        font-size:17px}
+      </style>
      <!--icons link-->
      <script src="https://kit.fontawesome.com/0690c5b817.js" crossorigin="anonymous"></script>
     </head>
        <body>
-        <!--nav bar-->
-        <div class="nav" >
-            <img src="lag0.png" class="lag" height="1vh" width="5px">
-           <ul>
-            <li> <a href="./index.html">Home</a></li>
-                 <li><a   href="./portfolio.html">Portfolio</a></li>
-             <li><a href="./work_experience.html">Work_Experience</a></li>
-             <li><a href="./site.html">Site_report</a></li>
-           <li><a class="active" href="./contact.html">Contacts</a></li>
-           </ul>
-           </div>
+         <!-- (A) MENU WRAPPER -->
+<div class="hamnav">
+    <img class="lag" src="lag0.png"  alt="logo" width="5"  height="2">
+    <!-- (B) THE HAMBURGER -->
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger"/>
+   
+    <!-- (C) MENU ITEMS -->
+    <div class="hamitems">
+        <ul>
+            <li> <a  href="./index.html">Home</a></li>
+            <li><a   href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./work_experience.html">Work_Experience</a></li>
+            <li><a href="./site.html">Site_report</a></li>
+            <li><a class="active" href="./contact.html">Contacts</a></li>
+            </ul>
+    </div>
+   </div>
            <!--contact form-->
            <h2>Contact form</h2>
            <div class="cforum">
                 <form>
                      <div class="group">
                     <label for="username"> <i class="fa-regular fa-user"></i> User/Nickname</label>
-                    <input type="text" name ="username" required/>
+                    <input class="dbox"type="text" name ="username" required/>
                     </div>
                     <div class="group">
                         <label for="email"><i class="fa-solid fa-envelope"></i>
                             Email address</label>
-                        <input type="email" id="email" required/>
+                        <input class="dbox" type="email" id="email" required/>
                         </div>
                      <div class="group">
                             <label for="number"><i class="fa-solid fa-phone"></i> Ph no.</label>
-                            <input type="text" id="number" required/>
+                            <input class="dbox" type="text" id="number" required/>
                             </div>
 
                      <div class="group">
