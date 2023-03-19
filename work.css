@@ -13,6 +13,10 @@ body{
     animation:neimage 10s linear infinite; transition-delay: 0.8s;
     display: grid;
    }
+   .p{
+    visibility: visilble;
+    opacity: 5;
+   }
    @keyframes neimage{
     1%{
     background-image: url(maipoon.jpg);

@@ -1,8 +1,8 @@
 .lag{
     width: 90px; height: 10vh;
     margin-right: 140px;}
-/* [ON BIG SCREEN] */
-/* (A) WRAPPER */
+/* [SCREEN] */
+/* coverage */
 .hamnav {
     width:505%;height: 10vh;
     list-style: none;
@@ -41,10 +41,10 @@
     
     text-decoration-style: double; }
   
-  /* (C) HIDE HAMBURGER */
+  /* ( HIDE HAMBURGER */
   .hamnav label,.hamburger { display: none; }
-  /* [ON SMALL SCREENS] */
-@media screen and (max-width: 768px){
+  /* [responsive] */
+@media screen and (max-width: 700px){
     /* (A) BREAK INTO VERTICAL MENU */
     .hamitems  a {
       box-sizing: border-box;
@@ -54,7 +54,7 @@
       
     }
     .hamnav{
-        width:100%;
+        width:90%;
        
     }
     /* (B) SHOW HAMBURGER ICON */
@@ -64,11 +64,227 @@
       background: #ad3ef7;
       font-style: normal;
       font-size: 1.2em;
-      padding: 10px;
+      padding: 2px 2px 0px 2px;
+    
     }
   
-    /* (C) TOGGLE SHOW/HIDE MENU */
-    .hamitems,.hamitemsul li a{ display: none; }
+    /* (C) check MENU */
+    .hamitems,.lag{ display: none; }
     .hamnav input:checked ~ .hamitems { display: block; }
-   
+    
+    }
+  body{
+    background-image: none;
+    background-color: #f3c0df;
+  }/*portfolio css/*
+  /*container includes */
+.parentcard{display: flex;justify-content: space-between;}
+.box{
+    display:flex;
+    margin:10px;
+    border-radius:5px
+}
+/*cards includes*/
+.slide{
+
+    box-shadow:5px 5px 20px black;
+    overflow:hidden;
+    padding: 5px;
+    height: 300px;
+    width: 300px;
+    margin: 80px;
+}
+/*images*/
+.img{
+    height:100px;
+    width:350px;
+    border-radius: 5px;
+    transition:0.6s;
+    }
+    /*intro*/
+.details{
+    
+    box-sizing: border-box;
+    position: absolute;
+    top: 460px;
+    margin: 30px;
+    background:lavender;
+    color:lavender;
+    transition: 0.6s;
+    opacity: 0;padding: 0px 20px;
+    width: 350px;
+}
+.h2{
+    margin:10px;
+    font-size:5px;
+    text-align: center;
+   }
+.p{
+    font-size:2px;
+    margin:5px;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+.span{
+    font-weight:bold;
+}
+.slide img{transition: 0.8s;}
+/*effect on cards*/
+.slide:hover{
+    cursor: pointer;
+}
+.slide:hover .details{
+    height:100px;
+    bottom: 70px;
+    background:purple;
+    width:350px;
+    margin-left: -50px;
+    text-align: center;opacity: 1;padding:0px  20px;border-radius: 10px;
+    
+}
+.slide:hover p{
+    opacity:1;
+    visibility:visible;
+}
+.slide:hover .details{
+    height:100px;
+    bottom: 70px;
+    background:purple;
+    width:350px;
+    margin-left: -50px;
+    text-align: center;opacity: 1;padding:0px  20px;border-radius: 10px;
+    
+}
+.slide:hover p{
+    opacity:1;
+    visibility:visible;
+}
+.slide:hover img{
+    transform:scale(1.2) rotate(-1deg);transition: 0.8s;
+}
+
+
+
+  /*portfolio responsive*/
+  @media screen and (max-width: 700px){
+ .parentcard{
+    display:block;
+    justify-content: space-between;
+ }
+  /*cards includes*/
+.slide{
+
+    box-shadow:5px 5px 20px black;
+    overflow:hidden;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    margin: 0px;
+}
+/*images*/
+.img{
+    height:10px;
+    width:50px;
+    border-radius: 5px;
+    transition:0.6s;
+    }
+    /*intro*/
+.details{
+    
+    box-sizing: border-box;
+    position:relative;
+    top: 20px;
+    margin: 30px;
+    background:lavender;
+    color:lavender;
+    transition: 0.6s;
+    opacity: 0;padding: 0px 20px;
+    width: 30px;
+}
+.h2{
+    margin:10px;
+    font-size:5px;
+    text-align: center;
+   }
+.p{
+    font-size:2px;
+    margin:5px;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+.span{
+    font-weight:bold;
+}
+.slide img{transition: 0.8s;}
   }
+/*work css*/
+.poon{
+    height: 70px;
+    width:900px;
+    margin-left: 60px;
+    padding: 200px;
+    border-radius: 0 100px;
+    background-image: url(poonhill1.jpg);
+    background-size: 100% 100%;
+    animation:neimage 10s linear infinite; transition-delay: 0.8s;
+    display: grid;
+   }
+   .p{
+    visibility: visilble;
+    opacity: 5;
+   }
+   @keyframes neimage{
+    1%{
+    background-image: url(maipoon.jpg);
+   } 
+    24%{
+    background-image: url(maipoon1.jpg);}
+    51%{
+        background-image: url(maipoon2.jpg);}
+    77%{
+        background-image: url(maipoonhill.jpg);}
+    
+    
+    100%{
+        background-image: url(poonhill1.jpg);}
+  
+        }
+/*work experience rsponse*/
+
+@media screen and (max-width: 700px){
+.poon{
+    height: 80px;
+    width:200px;
+    margin-left: 60px;
+    padding: 2px;
+    border-radius:0px;
+    background-image: url(poonhill1.jpg);
+    background-size: 100% 100%;
+    animation:neimage 10s linear infinite; transition-delay: 0.8s;
+    display: grid;
+   }
+   .p{
+    text-align: center;
+    font-size: 7px;
+    visibility: visible;
+    opacity: 5;
+   }
+   @keyframes neimage{
+    1%{
+    background-image: url(maipoon.jpg);
+   } 
+    24%{
+    background-image: url(maipoon1.jpg);}
+    51%{
+        background-image: url(maipoon2.jpg);}
+    77%{
+        background-image: url(maipoonhill.jpg);}
+    
+    
+    100%{
+        background-image: url(poonhill1.jpg);}
+  
+        }
+    }
